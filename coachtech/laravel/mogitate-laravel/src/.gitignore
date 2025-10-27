@@ -3,7 +3,7 @@
 /public/storage
 /storage/*
 !/storage/app/public
-!/storage/app/public/image
+!/storage/app/public/images
 /vendor
 /docker/mysql/data/
 /.idea

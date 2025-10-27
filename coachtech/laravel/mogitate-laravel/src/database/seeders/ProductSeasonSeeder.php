@@ -13,24 +13,30 @@ class ProductSeasonSeeder extends Seeder
      * @return void
      */
     public function run()
-{
-    DB::table('product_season')->insert([
-        ['product_id' => 1, 'season_id' => 3], // キウイ → 秋
-        ['product_id' => 1, 'season_id' => 4], // キウイ → 冬
-        ['product_id' => 2, 'season_id' => 1], // ストロベリー → 春
-        ['product_id' => 3, 'season_id' => 4], // オレンジ → 冬
-        ['product_id' => 4, 'season_id' => 2], // スイカ → 夏
-        ['product_id' => 5, 'season_id' => 2], // ピーチ → 夏
-        ['product_id' => 6, 'season_id' => 2], // シャインマスカット → 夏
-        ['product_id' => 6, 'season_id' => 3], // シャインマスカット → 秋
-        ['product_id' => 7, 'season_id' => 1], // パイナップル → 春
-        ['product_id' => 7, 'season_id' => 2], // パイナップル → 夏
-        ['product_id' => 8, 'season_id' => 2], // ブドウ → 夏
-        ['product_id' => 8, 'season_id' => 3], // ブドウ → 秋
-        ['product_id' => 9, 'season_id' => 2], // バナナ → 夏
-        ['product_id' => 10, 'season_id' => 1], // メロン → 春
-        ['product_id' => 10, 'season_id' => 2], // メロン → 夏
-    ]);
+    {
+        $records = [
+            ['product_id' => 1, 'season_id' => 3],
+            ['product_id' => 1, 'season_id' => 4],
+            ['product_id' => 2, 'season_id' => 1],
+            ['product_id' => 3, 'season_id' => 4],
+            ['product_id' => 4, 'season_id' => 2],
+            ['product_id' => 5, 'season_id' => 2],
+            ['product_id' => 6, 'season_id' => 2],
+            ['product_id' => 6, 'season_id' => 3],
+            ['product_id' => 7, 'season_id' => 1],
+            ['product_id' => 7, 'season_id' => 2],
+            ['product_id' => 8, 'season_id' => 2],
+            ['product_id' => 8, 'season_id' => 3],
+            ['product_id' => 9, 'season_id' => 2],
+            ['product_id' => 10, 'season_id' => 1],
+            ['product_id' => 10, 'season_id' => 2],
+        ];
 
-}
+        foreach ($records as $record) {
+            DB::table('product_season')->updateOrInsert(
+                ['product_id' => $record['product_id'], 'season_id' => $record['season_id']],
+                [] // 追加で更新したいカラムがあればここに書く
+            );
+        }
+    }
 }
