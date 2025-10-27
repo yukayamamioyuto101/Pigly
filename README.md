@@ -4,23 +4,23 @@
 
 2.cd mogitate-laravel
 
-3.Docker-compose build
+3.docker-compose build
 
-  Docker-compose up -d
+  docker-compose up -d
 
 # Laravel環境構築
 
-1.Docker-compose exec php bash
+1.docker-compose exec php bash
 
-2.Composer install
+2.composer install
 
 3.cp .env .example .env
 
-4.Php artisan key:generate
+4.php artisan key:generate
 
-5.Php artisan migrate
+5.php artisan migrate
 
-6.Php artisan db:seed
+6.php artisan db:seed
 
 
 # 使用技術
