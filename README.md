@@ -1,6 +1,8 @@
+# PiGly
+
 # Dockerビルド
 
-1.git clone git@github.com:yukayamamioyuto101/mogitate.git
+1.
 
 2.cd mogitate-laravel
 
