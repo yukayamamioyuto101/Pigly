@@ -1,0 +1,123 @@
+/* ページ全体の背景 */
+body {
+    background-color: #f5f5f5;
+    /* 薄いグレー */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ヘッダー */
+.header {
+    background-color: #fff;
+    /* 白背景 */
+    height: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.header-inner-logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #7b4fff;
+    margin: 0
+}
+
+.action {
+    display: flex;
+    align-items: center;
+    /* 垂直中央揃え */
+}
+
+.logout-btn {
+    background-color: #e7e6e6;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 7px;
+    cursor: pointer;
+    display: flex;
+    /* ← 中身（アイコン等）も中央に */
+    align-items: center;
+    justify-content: center;
+    line-height: normal;
+}
+
+.main-wrapper {
+    display: flex;
+    justify-content: center;
+    /* 横方向中央 */
+    align-items: center;
+    /* 縦方向中央 */
+    min-height: calc(100vh - 50px);
+    /* ヘッダー分を引く */
+}
+
+/* コンテナ */
+.target_weight-container {
+    width: 400px;
+    /* 適宜調整 */
+    padding: 20px;
+    background-color: #fff;
+    /* 白背景 */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 2px;
+}
+
+/* タイトル */
+.target_weight-container h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+/* 入力 */
+.target_weight-container input.target_weight {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* ボタン */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.edit-btn {
+    background: linear-gradient(135deg, #a18cd1 0%, #b3e5fc 100%);
+    color: #fff;
+    border: none;
+    padding: 5px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.return-btn {
+    background-color: #e7e6e6;
+    border: none;
+    padding: 5px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #000;
+    text-decoration: none;
+}

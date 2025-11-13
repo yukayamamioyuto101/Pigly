@@ -1,0 +1,138 @@
+/* =========================
+   Login Page
+   ========================= */
+
+/* 背景全体 */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 50%, #b3e5fc 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* ログインカードコンテナ */
+.register-container {
+    width: 380px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 40px 30px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* タイトル */
+.title-main {
+    font-size: 36px;
+    font-weight: bold;
+    color: #7b4fff;
+    margin-bottom: 10px;
+}
+
+.title-sub {
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 2px;
+}
+
+/* フォーム */
+form {
+    text-align: left;
+}
+
+/* 入力グループ */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input:focus {
+    border-color: #7b4fff;
+    box-shadow: 0 0 5px rgba(123, 79, 255, 0.3);
+    outline: none;
+}
+
+/* ボタン */
+.button {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-submit {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #a18cd1 0%, #b3e5fc 100%);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.button-submit:hover {
+    background: linear-gradient(135deg, #8c7ae6 0%, #81d4fa 100%);
+    transform: translateY(-2px);
+}
+
+/* アカウント作成リンク */
+.login {
+    margin-top: 20px;
+}
+
+.login-button {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.login-button:hover {
+    color: #0056b3;
+}
+
+/* スマホ対応 */
+@media (max-width: 480px) {
+    .register-container {
+        width: 90%;
+        padding: 30px 20px;
+    }
+
+    .title-main {
+        font-size: 28px;
+    }
+
+    .title-sub {
+        font-size: 18px;
+    }
+}
