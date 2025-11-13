@@ -50,6 +50,8 @@
   ３．体重管理画面で、現在の体重、目標体重、目標までの体重をみることができる。データ追加ボタンで、現在の体重、摂取カロリー、運動時間、運動内容を登録できる。詳細ボタンでデータの編集・更新ができる。
 
 #ER図
+<img width="2284" height="2444" alt="image" src="https://github.com/user-attachments/assets/90c4e2b5-5232-4fba-bfee-b5225fd6bc98" />
+
 
 
 
