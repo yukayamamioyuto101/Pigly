@@ -1,5 +1,6 @@
 # PiGly
 
+
 ## Dockerビルド
 
 1.git clone https://github.com/yukayamamioyuto101/Pigly.git
@@ -9,6 +10,7 @@
 3.docker-compose build
 
   docker-compose up -d
+  
 
 ## Laravel環境構築
 
@@ -25,6 +27,7 @@
 
 6.php artisan db:seed
 
+
 ## 使用技術
 
 　PHP
@@ -32,6 +35,7 @@
 　Laravel
  
 　Mysql
+ 
 
 ## URL
 
@@ -39,10 +43,14 @@
  
   phpMyAdmin http://localhost:8080/
 
+
 # 使いかた
   1．ユーザー情報を登録してログインする
   ２．現在の体重と、目標体重を登録する
   ３．体重管理画面で、現在の体重、目標体重、目標までの体重をみることができる。データ追加ボタンで、現在の体重、摂取カロリー、運動時間、運動内容を登録できる。詳細ボタンでデータの編集・更新ができる。
+
+#ER図
+
 
 
 
