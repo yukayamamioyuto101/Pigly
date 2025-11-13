@@ -1,8 +1,8 @@
 # PiGly
 
-# Dockerビルド
+## Dockerビルド
 
-1.
+1.git clone https://github.com/yukayamamioyuto101/Pigly.git
 
 2.cd mogitate-laravel
 
@@ -10,7 +10,7 @@
 
   docker-compose up -d
 
-# Laravel環境構築
+## Laravel環境構築
 
 1.docker-compose exec php bash
 
@@ -20,12 +20,12 @@
 
 4.php artisan key:generate
 
-5.php artisan migrate
+5.php artisan migrate#
+（必要に応じて　chmod -R 775 storage bootstrap/cache）
 
 6.php artisan db:seed
 
-
-# 使用技術
+## 使用技術
 
 　PHP
  
@@ -33,23 +33,17 @@
  
 　Mysql
 
-# URL
+## URL
 
-　開発環境：http://localhost/products
+　開発環境：http://localhost/weight_logs
  
   phpMyAdmin http://localhost:8080/
 
 # 使いかた
-
- 商品一覧ページで全商品を閲覧。商品名で検索、価格順で並び替えができる
- 
- 商品をクリックすると、その商品の詳細が表示される。この詳細ページで商品情報の編集・更新、削除ができる
- 
- 商品一覧ページの商品を追加ボタンで商品登録ページへ遷移し、商品の情報の登録ができる
+  1．ユーザー情報を登録してログインする
+  ２．現在の体重と、目標体重を登録する
+  ３．体重管理画面で、現在の体重、目標体重、目標までの体重をみることができる。データ追加ボタンで、現在の体重、摂取カロリー、運動時間、運動内容を登録できる。詳細ボタンでデータの編集・更新ができる。
 
 
-ER図
-
-<img width="985" height="567" alt="image" src="https://github.com/user-attachments/assets/ceb76894-57f1-4312-a371-098eddd50a92" />
 
 
