@@ -5,7 +5,7 @@
 
 1.git clone https://github.com/yukayamamioyuto101/Pigly.git
 
-2.cd mogitate-laravel
+2.cd pigky
 
 3.docker-compose build
 
