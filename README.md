@@ -3,7 +3,7 @@
 
 ## Dockerビルド
 
-1.git clone https://github.com/yukayamamioyuto101/Pigly/coachtech/laravel/pigly-laravel.git
+1.git clone https://github.com/yukayamamioyuto101/Pigly/coachtech/laravel/pigly-laravel
 
 2.cd pigly-laravel
 
